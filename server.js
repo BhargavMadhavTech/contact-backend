@@ -16,3 +16,7 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log("SERVER LISTNER", PORT);
 });
+
+app.get("/home", (req, res) => {
+  res.status(200).json("Welcome, your app is working well");
+});
